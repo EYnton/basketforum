@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negozio Online</title>
+    <link rel="stylesheet" href="css/style2.css"> <!-- Includi il file CSS -->
+    <script src="files/script.js" defer></script> <!-- Includi il file JavaScript in modo differito -->
+</head>
+<body>
+    <header>
+        <h1>Benvenuto nel Negozio Online di Basket Forum</h1>
+        <nav>
+            <a href="BasketForum.html">Clicca qui per tornare alla Home</a>
+        </nav>
+    </header>
+    <section id="negozio-online">
+    <h2>Seleziona una Categoria e un Prodotto</h2>
+    <div id="menu-tendina">
+        <select id="categoria" onchange="popolaMenu()">
+            <option value="abbigliamento_accessori">Abbigliamento e Accessori</option>
+            <option value="scarpe">Scarpe</option>
+            <option value="magliette">Magliette</option>
+            <option value="felpe">Felpe</option>
+            <option value="accessori">Accessori</option>
+            
+        </select>
+        <select id="prodotto">
+            <option value="">Scegli un prodotto</option>
+        </select>
+    </div>
+    <button id="aggiungi-carrello">Aggiungi al Carrello</button>
+</section>
+<section id="carrello">
+    <h2>Il Tuo Carrello</h2>
+    <ul id="lista-carrello">
+        <!-- Qui verranno inseriti i prodotti aggiunti al carrello -->
+    </ul>
+    <button id="svuota-carrello">Svuota Carrello</button>
+</section>
+
+</body>
+</html>
+
